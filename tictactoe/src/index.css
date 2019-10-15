@@ -1,28 +1,37 @@
+@font-face {
+  font-family: hallow;
+  src: url(./font/hallo.ttf);
+}
 body{
     background-color: orange;
-    color: white;
+    color:snow;
+    font-family: hallow;
 }
-.heading{
-    justify-content: center;
-    align-items: center;
-}
+
 .mainbox {
 	width: 400px;
 	height: 400px;
     margin: 20px auto;
     background-color:black;
-    color:orange!important;
     border: 2px solid white;
 	display: grid;
 	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 }
+
 .box {
   border: 2px solid white;
   border-radius: 2px;
   align-items: center;
   font-weight: bold;
-  font-size: 3em;
-  color: orange!important;
+  font-size: 4em;
+  color: orange;
   display: flex;
   justify-content: center;
+}
+
+.stopClick{
+    pointer-events: none;
+}
+.big{
+    font-size: 5rem;
 }
