@@ -106,24 +106,29 @@ function App() {
             //diagonally
             if (box1 === "X" && box5 === "X" && box9 === "X") xWin();
             if (box3 === "X" && box5 === "X" && box7 === "X") xWin();
-
+        
+        
+            // new statements for tie game CATS here 
+            else if (sq1 && sq2 && sq3 && sq4 && sq5 && sq6 && sq7 && sq8 && sq9 !=="") cats();
+            // 
+        
+        
         //if statements for tie game CATS
-
-            if (box1 === "X" && box2 === "X" && box3 === "O" && box4 === "O" && box5 === "O" && box6 === "X" && box7 === "X" && box8 === "O" && box9 === "X") tie();
-            if (box1 === "X" && box2 === "O" && box3 === "X" && box4 === "X" && box5 === "O" && box6 === "O" && box7 === "O" && box8 === "X" && box9 === "X") tie();
-            if (box1 === "O" && box2 === "X" && box3 === "O" && box4 === "X" && box5 === "X" && box6 === "O" && box7 === "X" && box8 === "O" && box9 === "X") tie();
-            if (box1 === "X" && box2 === "O" && box3 === "X" && box4 === "O" && box5 === "O" && box6 === "X" && box7 === "X" && box8 === "X" && box9 === "O") tie();
-            if (box1 === "O" && box2 === "X" && box3 === "X" && box4 === "X" && box5 === "O" && box6 === "O" && box7 === "O" && box8 === "X" && box9 === "X") tie();
-            if (box1 === "O" && box2 === "X" && box3 === "O" && box4 === "X" && box5 === "O" && box6 === "X" && box7 === "X" && box8 === "O" && box9 === "X") tie();
-            if (box1 === "O" && box2 === "X" && box3 === "X" && box4 === "X" && box5 === "O" && box6 === "O" && box7 === "X" && box8 === "O" && box9 === "X") tie();
-            if (box1 === "X" && box2 === "O" && box3 === "X" && box4 === "X" && box5 === "X" && box6 === "O" && box7 === "O" && box8 === "X" && box9 === "O") tie();
-            if (box1 === "X" && box2 === "O" && box3 === "O" && box4 === "O" && box5 === "X" && box6 === "X" && box7 === "X" && box8 === "X" && box9 === "O") tie();
-            if (box1 === "O" && box2 === "O" && box3 === "X" && box4 === "X" && box5 === "X" && box6 === "O" && box7 === "O" && box8 === "X" && box9 === "X") tie();
-            if (box1 === "X" && box2 === "X" && box3 === "O" && box4 === "O" && box5 === "O" && box6 === "X" && box7 === "X" && box8 === "X" && box9 === "O") tie();
-            if (box1 === "X" && box2 === "X" && box3 === "O" && box4 === "O" && box5 === "X" && box6 === "X" && box7 === "X" && box8 === "O" && box9 === "O") tie();
-            if (box1 === "O" && box2 === "X" && box3 === "O" && box4 === "O" && box5 === "X" && box6 === "X" && box7 === "X" && box8 === "O" && box9 === "X") tie();
-            if (box1 === "X" && box2 === "O" && box3 === "X" && box4 === "O" && box5 === "X" && box6 === "X" && box7 === "O" && box8 === "X" && box9 === "O") tie();
-            if (box1 === "O" && box2 === "X" && box3 === "X" && box4 === "X" && box5 === "X" && box6 === "O" && box7 === "O" && box8 === "O" && box9 === "X") tie();
+            // if (box1 === "X" && box2 === "X" && box3 === "O" && box4 === "O" && box5 === "O" && box6 === "X" && box7 === "X" && box8 === "O" && box9 === "X") tie();
+            // if (box1 === "X" && box2 === "O" && box3 === "X" && box4 === "X" && box5 === "O" && box6 === "O" && box7 === "O" && box8 === "X" && box9 === "X") tie();
+            // if (box1 === "O" && box2 === "X" && box3 === "O" && box4 === "X" && box5 === "X" && box6 === "O" && box7 === "X" && box8 === "O" && box9 === "X") tie();
+            // if (box1 === "X" && box2 === "O" && box3 === "X" && box4 === "O" && box5 === "O" && box6 === "X" && box7 === "X" && box8 === "X" && box9 === "O") tie();
+            // if (box1 === "O" && box2 === "X" && box3 === "X" && box4 === "X" && box5 === "O" && box6 === "O" && box7 === "O" && box8 === "X" && box9 === "X") tie();
+            // if (box1 === "O" && box2 === "X" && box3 === "O" && box4 === "X" && box5 === "O" && box6 === "X" && box7 === "X" && box8 === "O" && box9 === "X") tie();
+            // if (box1 === "O" && box2 === "X" && box3 === "X" && box4 === "X" && box5 === "O" && box6 === "O" && box7 === "X" && box8 === "O" && box9 === "X") tie();
+            // if (box1 === "X" && box2 === "O" && box3 === "X" && box4 === "X" && box5 === "X" && box6 === "O" && box7 === "O" && box8 === "X" && box9 === "O") tie();
+            // if (box1 === "X" && box2 === "O" && box3 === "O" && box4 === "O" && box5 === "X" && box6 === "X" && box7 === "X" && box8 === "X" && box9 === "O") tie();
+            // if (box1 === "O" && box2 === "O" && box3 === "X" && box4 === "X" && box5 === "X" && box6 === "O" && box7 === "O" && box8 === "X" && box9 === "X") tie();
+            // if (box1 === "X" && box2 === "X" && box3 === "O" && box4 === "O" && box5 === "O" && box6 === "X" && box7 === "X" && box8 === "X" && box9 === "O") tie();
+            // if (box1 === "X" && box2 === "X" && box3 === "O" && box4 === "O" && box5 === "X" && box6 === "X" && box7 === "X" && box8 === "O" && box9 === "O") tie();
+            // if (box1 === "O" && box2 === "X" && box3 === "O" && box4 === "O" && box5 === "X" && box6 === "X" && box7 === "X" && box8 === "O" && box9 === "X") tie();
+            // if (box1 === "X" && box2 === "O" && box3 === "X" && box4 === "O" && box5 === "X" && box6 === "X" && box7 === "O" && box8 === "X" && box9 === "O") tie();
+            // if (box1 === "O" && box2 === "X" && box3 === "X" && box4 === "X" && box5 === "X" && box6 === "O" && box7 === "O" && box8 === "O" && box9 === "X") tie();
     }, [feedback, box1, box2, box3, box4, box5, box6, box7, box8, box9, p1, p2])
 
 
